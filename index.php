@@ -1,53 +1,22 @@
-<?php
+<!DOCTYPE html>
+<html>
 
-$categorias = [];
-$categorias[] = 'infantil';
-$categorias[] = 'adolescente';
-$categorias[] = 'adulto';
-$categorias[] = 'idoso';
-//print_r($categorias); informa ordem e variedade da variável
+<head>
+    <meta charset="utf-8">
+    <title>Formulário de Inscrição</title>
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="viewport">
+</head>
 
-$nome = 'David';
-$idade = '19';
-//var_dump($nome); mostra quantos caracteres
-//var_dump($idade); mostra o tipo de variável
+<body>
 
-if($idade >= 6 && $idade <= 12)
-{
-    //echo 'Infantil';
-    for($i=0; $i<=count($categorias); i++)
-    {
-        if ($categorias[i] == 'infantil'){
-            echo "O nadador ".$nome." compete na categoria".$categorias[i];
-        }
-    }
-} else if ($idade >= 13 && $idade <=18)
-{
-    //echo 'Adolescente';
-    for($i=0; $i<=count($categorias); i++)
-    {
-        if ($categorias[i] == 'adolescente'){
-            echo "O nadador ".$nome." compete na categoria".$categorias[i];
-        }
-    }
-} else if {
-    //echo 'Adulto';
-    for($i=0; $i<=count($categorias); i++)
-    {
-        if ($categorias[i] == 'adulto'){
-            echo "O nadador ".$nome." compete na categoria".$categorias[i];
-        }
-    }
-}
- else {
-    //echo 'Idoso';
-    for($i=0; $i<=count($categorias); i++)
-    {
-        if ($categorias[i] == 'idoso'){
-            echo "O nadador ".$nome." compete na categoria" .$categorias[i];
-        }
-    }
-}
-
-
-?>
+<p></p>
+<form action "scrip.php" method="post">
+    <p>Seu nome: <input type="text" name="nome"/></p>
+    <p>Sua idade: <input type="text" name="idade"/></p>
+    <p><input type="submit" value="Enviar dados do competidor"/></p>
+</form>
+    
+</body>
+</html>
